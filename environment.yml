@@ -1,0 +1,33 @@
+name: nlp
+channels:
+  - conda-forge # Conda-forge channel for community-maintained packages
+  - defaults 
+dependencies:
+  - python=3.13  # Python version
+  - transformers # Hugging Face Transformers library
+  - datasets   # Hugging Face Datasets library
+  - sacrebleu  # BLEU score calculation
+  - rouge_score  # ROUGE score calculation
+  - spacy  # SpaCy for NLP tasks
+  - spacy-model-en_core_web_sm  # English model for SpaCy
+  - gensim  # Gensim for word embeddings and topic modeling
+  - nltk  # Natural Language Toolkit for text processing
+  - matplotlib  # Data visualization library
+  - seaborn # Statistical data visualization
+  - scikit-learn # Machine learning library
+  - jupyter # Jupyter Notebook support
+  - jupyterlab # JupyterLab support
+  - notebook # Jupyter Notebook support
+  - ipykernel # Jupyter kernel for Python
+  - pip # Python package manager
+  - cudatoolkit=11.8  # GPU support
+  - tensorflow-gpu    # TensorFlow with GPU
+  - pytorch           # PyTorch base (CPU/GPU)
+  - torchvision # PyTorch vision library
+  - torchaudio # PyTorch audio library
+  - torchtext # PyTorch text library
+  - pytorch-cuda=11.8 # PyTorch GPU backend
+  - pip:
+      - sentencepiece # SentencePiece for tokenization
+      - evaluate # Evaluation library for NLP tasks
+      - wandb # Weights and Biases for experiment tracking
